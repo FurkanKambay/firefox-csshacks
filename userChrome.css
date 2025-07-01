@@ -1,0 +1,145 @@
+/** Import components first **/
+
+/** For Sidebery - https://github.com/mbnuqw/sidebery **/
+@import url(chrome/window_control_placeholder_support.css);
+@import url(chrome/hide_tabs_toolbar_v2.css);
+/*  */
+
+/** Behavior **/
+/* @import url(chrome/drag_window_from_urlbar.css); */
+/*  */
+
+@import url(chrome/minimal_text_fields.css);
+
+/* Makes menubar slide over tabs toolbar when hovered */
+@import url(chrome/autohide_menubar.css);
+
+/* Makes toolbars appear as overlay instead of pushing down the website in fullscreen mode */
+@import url(chrome/overlay_fullscreen_toolbars.css);
+
+/* Page action-buttons "slide in" when cursor is on top of them and don't reserve space when not used */
+@import url(chrome/page_action_buttons_on_hover.css);
+
+/* Change the appearance of natively styled widgets including radios, checkboxes, buttons and expender "dropdown" arrows */
+/* @import url(chrome/dark_checkboxes_and_radios.css); */
+
+/** Visual Flair **/
+/* @import url(chrome/urlbar_centered_text.css); */
+@import url(chrome/urlbar_connection_type_text_colors.css);
+@import url(chrome/urlbar_info_icons_on_hover.css);
+@import url(chrome/loading_indicator_bouncing_line.css);
+@import url(chrome/button_effect_scale_onclick.css);
+/* @import url(chrome/minimal_toolbarbuttons_v3.css); */
+
+/* Create a circular placeholder for toolbarbutton and downscale to hide them */
+/* @import url(chrome/minimal_toolbarbuttons.css); */
+
+/* Icons - "application menu" (Hamburger Menu) which were removed in Proton */
+@import url(chrome/iconized_main_menu.css);
+
+/* Icons - menuitems in tabs context menu */
+@import url(chrome/iconized_tabs_context_menu.css);
+
+/* Icons - menuitems in textbox context menus, such as urlbar and searchbar. */
+@import url(chrome/iconized_textbox_context_menu.css);
+
+/* Icons - menuitems in context menus of bookmarks toolbar */
+@import url(chrome/iconized_places_context_menu.css);
+
+/* Icons - menuitems in web content area context menu */
+@import url(chrome/iconized_content_context_menu.css);
+
+/* Icons - Replaces menubar items text ("File Edit etc.") with icons */
+/* @import url(chrome/iconized_menubar_items.css); */
+
+/* Vertical navigation buttons in web content area context menu */
+@import url(chrome/vertical_context_navigation.css);
+/*  */
+
+
+/** Custom modifications after imports **/
+
+/** For Sidebery - https://github.com/mbnuqw/sidebery **/
+/* https://github.com/mbnuqw/sidebery/wiki/Firefox-Styles-Snippets-(via-userChrome.css)#completely-hide-native-tabs-striphttps://github.com/mbnuqw/sidebery/wiki/Firefox-Styles-Snippets-(via-userChrome.css)#completely-hide-native-tabs-strip */
+/* Hide sidebar header */
+#sidebar-panel-header {
+  display: none;
+}
+
+/** Custom - Example **/
+
+/* :root{
+  --toolbar-bgcolor: rgb(36,44,59) !important;
+  --uc-menu-bkgnd: var(--toolbar-bgcolor);
+  --arrowpanel-background: var(--toolbar-bgcolor) !important;
+  --autocomplete-popup-background: var(--toolbar-bgcolor) !important;
+  --uc-menu-disabled: rgb(90,90,90) !important;
+  --lwt-toolbar-field-focus: rgb(36,44,59) !important;
+} */
+
+/* #sidebar-box{ --sidebar-background-color: var(--toolbar-bgcolor) !important; }
+window.sidebar-panel{ --lwt-sidebar-background-color: rgb(36,44,59) !important; } */
+
+/** Custom - Furkan **/
+.tab-close-button {
+  display: none !important;
+}
+
+:root {
+  --tabpanel-background-color: transparent;
+  background: transparent;
+}
+
+/*
+:root {
+  --bg4: light-dark(rgba(255, 255, 255, .75), rgba(15, 15, 12, .75));
+  @media (-moz-platform: windows) {
+  --bs1: 0 45px 65px rgba(0, 0, 0, .35), 0 0 0 1px rgba(0, 0, 0, .17);
+  --bs2: 0 45px 65px rgba(0, 0, 0, .45), 0 0 0 1px rgba(255, 255, 255, .15);    
+  }
+}
+
+#urlbar[breakout][breakout-extend] #urlbar-background {
+  background-color: var(--bg4) !important;
+  backdrop-filter: blur(30px) !important;
+}
+#urlbar-background {
+  background-color: var(--bg4) !important;
+  backdrop-filter: blur(30px) !important;
+}
+#sidebar-main {
+  background-color: var(--bg4);
+  backdrop-filter: blur(30px);
+}
+*/
+
+
+/* https://github.com/dpcdpc11/FirefoxThemes/tree/master/Simplify%20Sunset */
+.titlebar-buttonbox {
+  padding: 6px !important;
+  margin-right: 3px !important;
+}
+
+.titlebar-button,
+.titlebar-button>.toolbarbutton-icon {
+  transition: all 0.3s ease !important;
+}
+
+.titlebar-button {
+  border-radius: 3px !important;
+  padding: 10px 10px !important;
+  margin: 0;
+  margin-left: 12px !important;
+}
+
+.titlebar-button>.toolbarbutton-icon {
+  width: 10px !important;
+  height: 10px !important;
+  stroke: #343D49 !important;
+  border-radius: 3px !important;
+}
+
+.titlebar-button.titlebar-close>.toolbarbutton-icon {
+  background: #E76463 !important;
+  stroke: #E76463 !important;
+}

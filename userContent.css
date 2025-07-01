@@ -1,0 +1,25 @@
+/** Import components **/
+
+/* Scrollbar colors and width - applied globally */
+@import url(content/css_scrollbar_width_color.css);
+
+/* Limit CSS data leak, POTENTIALLY BREAKS SOME SITES */
+/* @import url(content/limit_css_data_leak.css); */
+
+/* Background color in about:home, about:blank, about:newtab, about:privatebrowsing */
+@import url(content/newtab_background_color.css);
+
+/* Toolbar is invisible until hovered */
+@import url(content/transparent_reader_toolbar.css);
+
+/* Show addon management buttons without opening popup */
+@import url(content/addon_manage_buttons_without_popup.css);
+
+/* Recolors addons manager, preferences page and new about:config */
+/* @import url(content/dark_settings_pages.css); */
+
+/* Checkerboard pattern for transparent images, slight blue hue */
+@import url(content/standalone_image_page_mods.css);
+
+/* Toolbar is invisible until hovered */
+/* @import url(content/transparent_reader_toolbar.css); */
