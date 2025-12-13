@@ -66,6 +66,14 @@
   display: none;
 }
 
+/* https://superuser.com/questions/1276800/customize-the-maximum-width-of-the-firefox-sidebar */
+/* remove maximum/minimum width restriction of sidebar */
+#sidebar-box {
+  /* max-width: none !important; */
+  min-width: 372px !important;
+  /* wide enough for 5 custom pinned tabs in Sidebery */
+}
+
 /** Custom - Example **/
 
 /* :root{
