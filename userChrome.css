@@ -60,7 +60,7 @@
 /** Custom modifications after imports **/
 
 /** For Sidebery - https://github.com/mbnuqw/sidebery **/
-/* https://github.com/mbnuqw/sidebery/wiki/Firefox-Styles-Snippets-(via-userChrome.css)#completely-hide-native-tabs-striphttps://github.com/mbnuqw/sidebery/wiki/Firefox-Styles-Snippets-(via-userChrome.css)#completely-hide-native-tabs-strip */
+/* https://github.com/mbnuqw/sidebery/wiki/Firefox-Styles-Snippets-(via-userChrome.css)#completely-hide-native-tabs-strip */
 /* Hide sidebar header */
 #sidebar-panel-header {
   display: none;
@@ -86,8 +86,14 @@ window.sidebar-panel{ --lwt-sidebar-background-color: rgb(36,44,59) !important; 
 }
 
 :root {
-  --tabpanel-background-color: transparent;
-  background: transparent;
+  /* --tabpanel-background-color: unset !important; */
+  /* background: unset; */
+
+  /* --toolbox-bgcolor: unset !important; */
+  /* --toolbox-bgcolor-inactive: unset !important; */
+
+  /* --lwt-accent-color: unset !important; */
+  /* --lwt-accent-color-inactive: unset !important; */
 }
 
 /*
@@ -95,7 +101,7 @@ window.sidebar-panel{ --lwt-sidebar-background-color: rgb(36,44,59) !important; 
   --bg4: light-dark(rgba(255, 255, 255, .75), rgba(15, 15, 12, .75));
   @media (-moz-platform: windows) {
   --bs1: 0 45px 65px rgba(0, 0, 0, .35), 0 0 0 1px rgba(0, 0, 0, .17);
-  --bs2: 0 45px 65px rgba(0, 0, 0, .45), 0 0 0 1px rgba(255, 255, 255, .15);    
+  --bs2: 0 45px 65px rgba(0, 0, 0, .45), 0 0 0 1px rgba(255, 255, 255, .15);
   }
 }
 
